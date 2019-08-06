@@ -1,0 +1,7 @@
+events.tac.local.Tests/bin/
+events.tac.local.Tests/obj/
+events.tac.local/bin/
+events.tac.local/obj/
+packages/
+TAC.Sitecore.Abstractions/obj/
+TAC.Sitecore.Abstractions/bin/
