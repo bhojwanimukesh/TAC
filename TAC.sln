@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events.tac.local.Tests", "e
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAC.Sitecore.Abstractions", "TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj", "{71417F51-8B93-4F15-A2BB-BB12FE286B24}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "tds.master", "tds.master\tds.master.scproj", "{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{C2B3835E-66A0-48C8-9F54-7AF199128588}"
+	ProjectSection(SolutionItems) = preProject
+		TdsGlobal.config = TdsGlobal.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +34,12 @@ Global
 		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C50C21-0C12-4EF3-8BEB-0F6A90C85F3D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

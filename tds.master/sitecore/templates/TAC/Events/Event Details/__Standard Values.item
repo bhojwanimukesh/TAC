@@ -1,0 +1,83 @@
+----item----
+version: 1
+id: {CAC88625-40F4-4BE8-A4AA-1E40EE458592}
+database: master
+path: /sitecore/templates/TAC/Events/Event Details/__Standard Values
+parent: {692E5C20-E773-42AD-A14E-499A477D35CB}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {692E5C20-E773-42AD-A14E-499A477D35CB}
+templatekey: Event Details
+created: 20190730T130454Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 957
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{6F64B951-DF71-4E3F-8859-1A0BE15B687D}">
+    <r id="{6C859B0B-0CE8-4181-8792-C5BC52D01EC3}" ph="main" uid="{09623001-57BF-4818-A0CF-3648BB4494C6}" />
+    <r id="{D9BC3EA1-0B56-4BEB-8E19-354A951A6352}" ph="pageHeader" uid="{5A9F781A-B2CE-404C-B991-91C3100161A8}" />
+    <r ds="{202F6DE4-2C34-4E8E-8DC5-3545BACE4D32}" id="{D0DB86AC-BD1D-4A85-A06F-AE6DD10C9BA7}" ph="pageSide" uid="{40B84039-E995-4D91-9F62-C4F48AA61F72}" />
+    <r id="{DC94506C-F40F-47EE-9EEA-78FAA919735D}" ph="pageSide" uid="{32BF3981-EE9B-4565-B146-81CBD24B6EF2}" />
+    <r id="{2638B486-AC92-4FF1-B86F-7526210E4285}" ph="pageSide" uid="{2F026C60-DDD9-403C-A60D-2E3C491C6955}" />
+    <r id="{01FD348B-B398-408B-8231-20C0A6B89A6C}" ph="pageContent" uid="{CF0E3B8E-2345-4169-A33D-FE5204DEC8EC}" />
+    <r id="{E5895D5D-6161-47BF-BD90-4CD6D7052ABA}" ph="pageContent" uid="{472A290D-F57B-491E-B33D-B5D160313D75}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: b12a2ed7-9941-481b-bdb8-eb1180ab1b22
+
+----field----
+field: {3E54D8E8-2854-49FE-B103-A229C13615D8}
+name: Highlights
+key: highlights
+content-length: 29
+
+List event highlights here...
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190730T130454Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b12a2ed7-9941-481b-bdb8-eb1180ab1b22
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190806T095905Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
