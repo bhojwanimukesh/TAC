@@ -151,7 +151,10 @@
     <Content Include="Images\Rock-Climbing-in-the-Czech-Republic.jpg" />
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
+    <Content Include="App_Config\Include\TAC\Events\defaultEventsIndexConfiguration.config" />
     <None Include="App_Config\Include\TAC\Events\events.site.config" />
+    <Content Include="App_Config\Include\TAC\Events\Solr.Events.Web.Index.config" />
+    <None Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
