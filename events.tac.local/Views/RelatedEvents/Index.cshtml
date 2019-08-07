@@ -1,5 +1,10 @@
 ﻿@using Sitecore.Mvc.Extensions;
 @model IEnumerable<NavigationItem>
+
+@{
+    Layout = null;
+}
+
 <!-- [Related Events] -->
 
 @using (Html.EditFrame(RenderingContext.Current.ContextItem.Paths.FullPath, "Related Events", "Edit Related Events", null, null, null))
