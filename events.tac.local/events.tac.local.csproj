@@ -172,7 +172,6 @@
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
     <Content Include="App_Config\Include\TAC\Events\defaultEventsIndexConfiguration.config" />
-    <Content Include="App_Config\Include\Glass\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <None Include="App_Config\Include\TAC\Events\events.site.config" />
