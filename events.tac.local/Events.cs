@@ -4,23 +4,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -41,7 +24,6 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
-
 
 
 
@@ -88,8 +70,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	[SitecoreType(TemplateId=IBootstrap_BackgroundConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IBootstrap_Background : IGlassBase 
 	{
-			
-	}
+				}
 
 
 	public static partial class IBootstrap_BackgroundConstants{
@@ -115,7 +96,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	   
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 {
@@ -130,8 +110,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	[SitecoreType(TemplateId=I_Base_NavigationConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_Base_Navigation : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The ExcludeFromNavigation field.
 					/// <para></para>
 					/// <para>Field Type: Checkbox</para>		
@@ -141,8 +120,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_NavigationConstants.ExcludeFromNavigationFieldName)]
 					bool ExcludeFromNavigation  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_Base_NavigationConstants{
@@ -151,8 +129,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Base Navigation";
 
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
@@ -171,8 +148,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	public partial class _Base_Navigation  : GlassBase, I_Base_Navigation 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -185,7 +161,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Content
 {
@@ -200,8 +175,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	[SitecoreType(TemplateId=IBootstrap_Background_FolderConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IBootstrap_Background_Folder : IGlassBase 
 	{
-			
-	}
+				}
 
 
 	public static partial class IBootstrap_Background_FolderConstants{
@@ -227,7 +201,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	   
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Content
 {
@@ -242,8 +215,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	[SitecoreType(TemplateId=ICommentConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IComment : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Date field.
 					/// <para></para>
 					/// <para>Field Type: Date</para>		
@@ -253,8 +225,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 					[SitecoreField(ICommentConstants.DateFieldName)]
 					DateTime Date  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Description field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -264,8 +235,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 					[SitecoreField(ICommentConstants.DescriptionFieldName)]
 					string Description  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Name field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -275,8 +245,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 					[SitecoreField(ICommentConstants.NameFieldName)]
 					string Name  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class ICommentConstants{
@@ -285,18 +254,15 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Comment";
 
-		
-			
+					
 			public static readonly ID DateFieldId = new ID("ac720eec-0784-4c2b-bd9c-0396d3205ccd");
 			public const string DateFieldName = "Date";
 			
-		
-			
+					
 			public static readonly ID DescriptionFieldId = new ID("0aed0a0d-bd21-448c-9aab-25d2d1e2d44b");
 			public const string DescriptionFieldName = "Description";
 			
-		
-			
+					
 			public static readonly ID NameFieldId = new ID("77ee28e4-ff25-485e-9672-20450e34103b");
 			public const string NameFieldName = "Name";
 			
@@ -315,8 +281,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	public partial class Comment  : GlassBase, IComment 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Date field.
 				/// <para></para>
 				/// <para>Field Type: Date</para>		
@@ -327,8 +292,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 				[SitecoreField(ICommentConstants.DateFieldName)]
 				public virtual DateTime Date  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Description field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -339,8 +303,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 				[SitecoreField(ICommentConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Name field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -353,7 +316,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 {
@@ -368,8 +330,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	[SitecoreType(TemplateId=I_Base_ContentConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_Base_Content : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The ContentHeading field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -379,8 +340,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_ContentConstants.ContentHeadingFieldName)]
 					string ContentHeading  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The ContentIntro field.
 					/// <para></para>
 					/// <para>Field Type: Multi-Line Text</para>		
@@ -390,8 +350,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_ContentConstants.ContentIntroFieldName)]
 					string ContentIntro  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_Base_ContentConstants{
@@ -400,13 +359,11 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Base Content";
 
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
@@ -425,8 +382,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	public partial class _Base_Content  : GlassBase, I_Base_Content 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -437,8 +393,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 				[SitecoreField(I_Base_ContentConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -451,7 +406,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 {
@@ -466,8 +420,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	[SitecoreType(TemplateId=IEvents_SectionConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IEvents_Section : IGlassBase , global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Heading_Decoration, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Meta_Information, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Navigation
 	{
-			
-	}
+				}
 
 
 	public static partial class IEvents_SectionConstants{
@@ -476,43 +429,35 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Events Section";
 
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
-		
-			
+					
 			public static readonly ID DecorationBannerFieldId = new ID("8eee67a7-3113-4a87-8c26-092fbca716df");
 			public const string DecorationBannerFieldName = "DecorationBanner";
 			
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
@@ -531,8 +476,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	public partial class Events_Section  : GlassBase, IEvents_Section 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -543,8 +487,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -555,8 +498,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.ContentIntroFieldName)]
 				public virtual string ContentIntro  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The DecorationBanner field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -567,8 +509,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.DecorationBannerFieldName)]
 				public virtual Image DecorationBanner  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -579,8 +520,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -591,8 +531,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -603,8 +542,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -615,8 +553,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_SectionConstants.RobotsIndexFieldName)]
 				public virtual bool RobotsIndex  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -629,7 +566,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 {
@@ -644,8 +580,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	[SitecoreType(TemplateId=IEvents_ListConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IEvents_List : IGlassBase , global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Heading_Decoration, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Meta_Information, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Navigation
 	{
-			
-	}
+				}
 
 
 	public static partial class IEvents_ListConstants{
@@ -654,43 +589,35 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Events List";
 
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
-		
-			
+					
 			public static readonly ID DecorationBannerFieldId = new ID("8eee67a7-3113-4a87-8c26-092fbca716df");
 			public const string DecorationBannerFieldName = "DecorationBanner";
 			
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
@@ -709,8 +636,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	public partial class Events_List  : GlassBase, IEvents_List 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -721,8 +647,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -733,8 +658,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.ContentIntroFieldName)]
 				public virtual string ContentIntro  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The DecorationBanner field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -745,8 +669,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.DecorationBannerFieldName)]
 				public virtual Image DecorationBanner  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -757,8 +680,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -769,8 +691,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -781,8 +702,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -793,8 +713,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvents_ListConstants.RobotsIndexFieldName)]
 				public virtual bool RobotsIndex  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -807,7 +726,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 {
@@ -822,8 +740,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	[SitecoreType(TemplateId=IEvent_DetailsConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IEvent_Details : IGlassBase , global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content_Body, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Heading_Decoration, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Meta_Information, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Navigation
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The EventImage field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -833,8 +750,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.EventImageFieldName)]
 					Image EventImage  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Highlights field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
@@ -844,8 +760,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.HighlightsFieldName)]
 					string Highlights  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The DifficultyLevel field.
 					/// <para></para>
 					/// <para>Field Type: Integer</para>		
@@ -855,8 +770,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.DifficultyLevelFieldName)]
 					int DifficultyLevel  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Duration field.
 					/// <para></para>
 					/// <para>Field Type: Integer</para>		
@@ -866,8 +780,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.DurationFieldName)]
 					int Duration  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The StartDate field.
 					/// <para></para>
 					/// <para>Field Type: Date</para>		
@@ -877,8 +790,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.StartDateFieldName)]
 					DateTime StartDate  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The RelatedEvents field.
 					/// <para></para>
 					/// <para>Field Type: Treelist</para>		
@@ -888,8 +800,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.RelatedEventsFieldName)]
 					IEnumerable<IEvent_Details> RelatedEvents  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Comments field.
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
@@ -899,8 +810,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					[SitecoreField(IEvent_DetailsConstants.CommentsFieldName)]
 					IEnumerable<Content.IComment> Comments  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class IEvent_DetailsConstants{
@@ -909,83 +819,67 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Event Details";
 
-		
-			
+					
 			public static readonly ID EventImageFieldId = new ID("8c18669b-0218-45fa-be44-0fc87ab70b00");
 			public const string EventImageFieldName = "EventImage";
 			
-		
-			
+					
 			public static readonly ID HighlightsFieldId = new ID("3e54d8e8-2854-49fe-b103-a229c13615d8");
 			public const string HighlightsFieldName = "Highlights";
 			
-		
-			
+					
 			public static readonly ID DifficultyLevelFieldId = new ID("f06a2269-6f95-4d92-a8b0-9cf851bfb470");
 			public const string DifficultyLevelFieldName = "DifficultyLevel";
 			
-		
-			
+					
 			public static readonly ID DurationFieldId = new ID("55ee0f0a-4306-4bb3-b3af-124b081cbff0");
 			public const string DurationFieldName = "Duration";
 			
-		
-			
+					
 			public static readonly ID StartDateFieldId = new ID("4796de68-9df7-4368-b40e-8689b1d608f5");
 			public const string StartDateFieldName = "StartDate";
 			
-		
-			
+					
 			public static readonly ID RelatedEventsFieldId = new ID("774977b9-5f5f-4bdc-9623-c69cda788c93");
 			public const string RelatedEventsFieldName = "RelatedEvents";
 			
-		
-			
+					
 			public static readonly ID CommentsFieldId = new ID("b80dd79f-3ae5-419d-a439-24b19ac15d1f");
 			public const string CommentsFieldName = "Comments";
 			
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
-		
-			
+					
 			public static readonly ID ContentBodyFieldId = new ID("70beac33-b8a3-4729-ae88-4589097a179a");
 			public const string ContentBodyFieldName = "ContentBody";
 			
-		
-			
+					
 			public static readonly ID DecorationBannerFieldId = new ID("8eee67a7-3113-4a87-8c26-092fbca716df");
 			public const string DecorationBannerFieldName = "DecorationBanner";
 			
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
@@ -1004,8 +898,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	public partial class Event_Details  : GlassBase, IEvent_Details 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The EventImage field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1016,8 +909,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.EventImageFieldName)]
 				public virtual Image EventImage  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Highlights field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1028,8 +920,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.HighlightsFieldName)]
 				public virtual string Highlights  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The DifficultyLevel field.
 				/// <para></para>
 				/// <para>Field Type: Integer</para>		
@@ -1040,8 +931,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.DifficultyLevelFieldName)]
 				public virtual int DifficultyLevel  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Duration field.
 				/// <para></para>
 				/// <para>Field Type: Integer</para>		
@@ -1052,8 +942,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.DurationFieldName)]
 				public virtual int Duration  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The StartDate field.
 				/// <para></para>
 				/// <para>Field Type: Date</para>		
@@ -1064,8 +953,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.StartDateFieldName)]
 				public virtual DateTime StartDate  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RelatedEvents field.
 				/// <para></para>
 				/// <para>Field Type: Treelist</para>		
@@ -1076,8 +964,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.RelatedEventsFieldName)]
 				public virtual IEnumerable<IEvent_Details> RelatedEvents  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Comments field.
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
@@ -1088,8 +975,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.CommentsFieldName)]
 				public virtual IEnumerable<Content.IComment> Comments  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1100,8 +986,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -1112,8 +997,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.ContentIntroFieldName)]
 				public virtual string ContentIntro  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentBody field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1124,8 +1008,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.ContentBodyFieldName)]
 				public virtual string ContentBody  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The DecorationBanner field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1136,8 +1019,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.DecorationBannerFieldName)]
 				public virtual Image DecorationBanner  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1148,8 +1030,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1160,8 +1041,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1172,8 +1052,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1184,8 +1063,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IEvent_DetailsConstants.RobotsIndexFieldName)]
 				public virtual bool RobotsIndex  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1198,7 +1076,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 {
@@ -1213,8 +1090,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	[SitecoreType(TemplateId=I_Base_Content_BodyConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_Base_Content_Body : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The ContentBody field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
@@ -1224,8 +1100,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Content_BodyConstants.ContentBodyFieldName)]
 					string ContentBody  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_Base_Content_BodyConstants{
@@ -1234,8 +1109,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Base Content Body";
 
-		
-			
+					
 			public static readonly ID ContentBodyFieldId = new ID("70beac33-b8a3-4729-ae88-4589097a179a");
 			public const string ContentBodyFieldName = "ContentBody";
 			
@@ -1254,8 +1128,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	public partial class _Base_Content_Body  : GlassBase, I_Base_Content_Body 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentBody field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1268,7 +1141,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 {
@@ -1283,8 +1155,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	[SitecoreType(TemplateId=I_Base_Meta_InformationConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_Base_Meta_Information : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The MetaDescription field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1294,8 +1165,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Meta_InformationConstants.MetaDescriptionFieldName)]
 					string MetaDescription  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The MetaTitle field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1305,8 +1175,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Meta_InformationConstants.MetaTitleFieldName)]
 					string MetaTitle  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The RobotsFollow field.
 					/// <para></para>
 					/// <para>Field Type: Checkbox</para>		
@@ -1316,8 +1185,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Meta_InformationConstants.RobotsFollowFieldName)]
 					bool RobotsFollow  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The RobotsIndex field.
 					/// <para></para>
 					/// <para>Field Type: Checkbox</para>		
@@ -1327,8 +1195,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Meta_InformationConstants.RobotsIndexFieldName)]
 					bool RobotsIndex  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_Base_Meta_InformationConstants{
@@ -1337,23 +1204,19 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Base Meta Information";
 
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
@@ -1372,8 +1235,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	public partial class _Base_Meta_Information  : GlassBase, I_Base_Meta_Information 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1384,8 +1246,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 				[SitecoreField(I_Base_Meta_InformationConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1396,8 +1257,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 				[SitecoreField(I_Base_Meta_InformationConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1408,8 +1268,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 				[SitecoreField(I_Base_Meta_InformationConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1422,7 +1281,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 {
@@ -1437,8 +1295,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	[SitecoreType(TemplateId=I_Base_Heading_DecorationConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_Base_Heading_Decoration : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The DecorationBanner field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -1448,8 +1305,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					[SitecoreField(I_Base_Heading_DecorationConstants.DecorationBannerFieldName)]
 					Image DecorationBanner  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_Base_Heading_DecorationConstants{
@@ -1458,8 +1314,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Base Heading Decoration";
 
-		
-			
+					
 			public static readonly ID DecorationBannerFieldId = new ID("8eee67a7-3113-4a87-8c26-092fbca716df");
 			public const string DecorationBannerFieldName = "DecorationBanner";
 			
@@ -1478,8 +1333,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 	public partial class _Base_Heading_Decoration  : GlassBase, I_Base_Heading_Decoration 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The DecorationBanner field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1492,7 +1346,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Rendering_Parameters
 {
@@ -1507,8 +1360,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 	[SitecoreType(TemplateId=IBootstrap_Background_ColorConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IBootstrap_Background_Color : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The CssClass field.
 					/// <para></para>
 					/// <para>Field Type: Droplist</para>		
@@ -1518,8 +1370,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 					[SitecoreField(IBootstrap_Background_ColorConstants.CssClassFieldName)]
 					string CssClass  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class IBootstrap_Background_ColorConstants{
@@ -1528,8 +1379,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Bootstrap Background Color";
 
-		
-			
+					
 			public static readonly ID CssClassFieldId = new ID("a01fa7d9-6b52-407f-82cc-294124db417a");
 			public const string CssClassFieldName = "CssClass";
 			
@@ -1548,8 +1398,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 	public partial class Bootstrap_Background_Color  : GlassBase, IBootstrap_Background_Color 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The CssClass field.
 				/// <para></para>
 				/// <para>Field Type: Droplist</para>		
@@ -1562,7 +1411,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Rendering_Parameters
 {
@@ -1577,8 +1425,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 	[SitecoreType(TemplateId=IFeatureRow_PropertiesConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IFeatureRow_Properties : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The ph_feature_spot_count field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1588,8 +1435,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 					[SitecoreField(IFeatureRow_PropertiesConstants.Ph_Feature_Spot_CountFieldName)]
 					string Ph_Feature_Spot_Count  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class IFeatureRow_PropertiesConstants{
@@ -1598,8 +1444,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "FeatureRow Properties";
 
-		
-			
+					
 			public static readonly ID Ph_Feature_Spot_CountFieldId = new ID("d0c40914-9e32-415b-8c9d-a11bcfea47e3");
 			public const string Ph_Feature_Spot_CountFieldName = "ph_feature_spot_count";
 			
@@ -1618,8 +1463,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 	public partial class FeatureRow_Properties  : GlassBase, IFeatureRow_Properties 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ph_feature_spot_count field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1632,7 +1476,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Render
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 {
@@ -1647,8 +1490,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	[SitecoreType(TemplateId=IContent_PageConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IContent_Page : IGlassBase , global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content_Body, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Heading_Decoration, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Meta_Information, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Navigation
 	{
-			
-	}
+				}
 
 
 	public static partial class IContent_PageConstants{
@@ -1657,48 +1499,39 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Content Page";
 
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
-		
-			
+					
 			public static readonly ID ContentBodyFieldId = new ID("70beac33-b8a3-4729-ae88-4589097a179a");
 			public const string ContentBodyFieldName = "ContentBody";
 			
-		
-			
+					
 			public static readonly ID DecorationBannerFieldId = new ID("8eee67a7-3113-4a87-8c26-092fbca716df");
 			public const string DecorationBannerFieldName = "DecorationBanner";
 			
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
@@ -1717,8 +1550,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	public partial class Content_Page  : GlassBase, IContent_Page 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1729,8 +1561,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -1741,8 +1572,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.ContentIntroFieldName)]
 				public virtual string ContentIntro  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentBody field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1753,8 +1583,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.ContentBodyFieldName)]
 				public virtual string ContentBody  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The DecorationBanner field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1765,8 +1594,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.DecorationBannerFieldName)]
 				public virtual Image DecorationBanner  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1777,8 +1605,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1789,8 +1616,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1801,8 +1627,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1813,8 +1638,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IContent_PageConstants.RobotsIndexFieldName)]
 				public virtual bool RobotsIndex  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1827,7 +1651,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Content
 {
@@ -1842,8 +1665,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	[SitecoreType(TemplateId=IComments_FolderConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IComments_Folder : IGlassBase 
 	{
-			
-	}
+				}
 
 
 	public static partial class IComments_FolderConstants{
@@ -1869,7 +1691,6 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Conten
 	   
 			
 	}
-
 }
 namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 {
@@ -1884,8 +1705,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	[SitecoreType(TemplateId=IHome_PageConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IHome_Page : IGlassBase , global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Meta_Information, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Navigation, global::events.tac.local.events.tac.local.sitecore.templates.TAC.Events.Base.I_Base_Content
 	{
-			
-	}
+				}
 
 
 	public static partial class IHome_PageConstants{
@@ -1894,38 +1714,31 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Home Page";
 
-		
-			
+					
 			public static readonly ID MetaDescriptionFieldId = new ID("fcc40856-0685-440d-93ea-c4473df50b35");
 			public const string MetaDescriptionFieldName = "MetaDescription";
 			
-		
-			
+					
 			public static readonly ID MetaTitleFieldId = new ID("153dca69-54ab-477a-97d2-bb46b653470a");
 			public const string MetaTitleFieldName = "MetaTitle";
 			
-		
-			
+					
 			public static readonly ID RobotsFollowFieldId = new ID("536f6331-1b4e-4c56-a02e-8258de4d2b7e");
 			public const string RobotsFollowFieldName = "RobotsFollow";
 			
-		
-			
+					
 			public static readonly ID RobotsIndexFieldId = new ID("00ef2982-b6e2-4f06-aefd-ea93b5e18255");
 			public const string RobotsIndexFieldName = "RobotsIndex";
 			
-		
-			
+					
 			public static readonly ID ExcludeFromNavigationFieldId = new ID("92e2edb5-3f5e-4c2c-9900-bb48424216f7");
 			public const string ExcludeFromNavigationFieldName = "ExcludeFromNavigation";
 			
-		
-			
+					
 			public static readonly ID ContentHeadingFieldId = new ID("ad17b597-b081-45da-a374-2d21dcdac124");
 			public const string ContentHeadingFieldName = "ContentHeading";
 			
-		
-			
+					
 			public static readonly ID ContentIntroFieldId = new ID("4655cc09-bb00-490e-abad-a53ccf7272d6");
 			public const string ContentIntroFieldName = "ContentIntro";
 			
@@ -1944,8 +1757,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 	public partial class Home_Page  : GlassBase, IHome_Page 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaDescription field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1956,8 +1768,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.MetaDescriptionFieldName)]
 				public virtual string MetaDescription  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The MetaTitle field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1968,8 +1779,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.MetaTitleFieldName)]
 				public virtual string MetaTitle  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsFollow field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1980,8 +1790,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.RobotsFollowFieldName)]
 				public virtual bool RobotsFollow  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The RobotsIndex field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -1992,8 +1801,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.RobotsIndexFieldName)]
 				public virtual bool RobotsIndex  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ExcludeFromNavigation field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
@@ -2004,8 +1812,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.ExcludeFromNavigationFieldName)]
 				public virtual bool ExcludeFromNavigation  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentHeading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -2016,8 +1823,7 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 				[SitecoreField(IHome_PageConstants.ContentHeadingFieldName)]
 				public virtual string ContentHeading  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The ContentIntro field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -2030,5 +1836,4 @@ namespace events.tac.local.events.tac.local.sitecore.templates.TAC.Events
 					
 			
 	}
-
 }
