@@ -22,6 +22,13 @@
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenFile>Events.cs</CodeGenFile>
+    <BaseNamespace>events.tac.local</BaseNamespace>
+    <CodeGenTargetProject>events.tac.local</CodeGenTargetProject>
+    <BaseTransformFile>glassv5item.tt</BaseTransformFile>
+    <HeaderTransformFile>glassv5header.tt</HeaderTransformFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,7 +94,14 @@
     <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Bootstrap Background Folder.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Bootstrap Background Folder\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Bootstrap Background.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comment.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comment\Content.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comment\Content\Date.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comment\Content\Description.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comment\Content\Name.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comments Folder.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Content\Comments Folder\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Content.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Content\EventImage.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
@@ -97,7 +111,9 @@
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Details\Duration.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Details\StartDate.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\References.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\References\RelatedEvents.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\References\RelatedEvents.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><CodeGenData>generic=IEvent_Details</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Reviews.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\TAC\Events\Event Details\Reviews\Comments.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><CodeGenData>generic=Content.IComment</CodeGenData></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Events List.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Events List\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Events Section.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
@@ -114,5 +130,7 @@
     <SitecoreItem Include="sitecore\templates\TAC\Events\Rendering Parameters\FeatureRow Properties\Configuration.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\TAC\Events\Rendering Parameters\FeatureRow Properties\Configuration\ph_feature_spot_count.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
   </ItemGroup>
+  <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\generalextensions.tt" /><CodeGenTemplate Include="Code Generation Templates\glassheader.tt" /><CodeGenTemplate Include="Code Generation Templates\glassitem.tt" /><CodeGenTemplate Include="Code Generation Templates\glassv3header.tt" /><CodeGenTemplate Include="Code Generation Templates\glassv3item.tt" /><CodeGenTemplate Include="Code Generation Templates\glassv5header.tt" /><CodeGenTemplate Include="Code Generation Templates\glassv5item.tt" /><CodeGenTemplate Include="Code Generation Templates\helpers.tt" /><CodeGenTemplate Include="Code Generation Templates\inflector.tt" /><CodeGenTemplate Include="Code Generation Templates\itempaths.tt" /><CodeGenTemplate Include="Code Generation Templates\mddocheader.tt" /><CodeGenTemplate Include="Code Generation Templates\mddocitem.tt" /><CodeGenTemplate Include="Code Generation Templates\stringextensions.tt" /><CodeGenTemplate Include="Code Generation Templates\velirheader.tt" /><CodeGenTemplate Include="Code Generation Templates\veliritem.tt" /></ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
