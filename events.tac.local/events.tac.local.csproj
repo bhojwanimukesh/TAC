@@ -125,7 +125,9 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Business\ActionLogger.cs" />
     <Compile Include="Business\BreadcrumbBuilder.cs" />
+    <Compile Include="Business\CustomPipeline.cs" />
     <Compile Include="Business\EventsProvider.cs" />
     <Compile Include="Business\NavigationBuilder.cs" />
     <Compile Include="Business\RelatedEventsProvider.cs" />
@@ -189,6 +191,7 @@
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
     <Content Include="App_Config\Include\TAC\Events\defaultEventsIndexConfiguration.config" />
+    <Content Include="App_Config\Include\TAC\Events\zzCustomPipeline.config" />
     <None Include="App_Config\Include\TAC\Events\events.site.config" />
     <Content Include="App_Config\Include\TAC\Events\Solr.Events.Web.Index.config" />
     <None Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
