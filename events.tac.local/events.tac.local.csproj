@@ -123,14 +123,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App_Config\Include\TAC\Pipelines\Request\set 404 statuscode.config" />
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="Business\ActionLogger.cs" />
     <Compile Include="Business\BreadcrumbBuilder.cs" />
+    <Compile Include="Business\Request\CustomExecuteRequest.cs" />
     <Compile Include="Business\CustomPipeline.cs" />
     <Compile Include="Business\EventsProvider.cs" />
     <Compile Include="Business\NavigationBuilder.cs" />
     <Compile Include="Business\RelatedEventsProvider.cs" />
+    <Compile Include="Business\Request\HttpRequestBase.cs" />
+    <Compile Include="Business\Request\Set404StatusCode.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
@@ -191,9 +195,11 @@
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
     <Content Include="App_Config\Include\TAC\Events\defaultEventsIndexConfiguration.config" />
-    <Content Include="App_Config\Include\TAC\Events\zzCustomPipeline.config" />
+    <Content Include="App_Config\Include\TAC\Pipelines\zzCustomPipeline.config" />
+    <Content Include="App_Config\Include\TAC\Pipelines\Request\configure 404 page.config" />
     <None Include="App_Config\Include\TAC\Events\events.site.config" />
     <Content Include="App_Config\Include\TAC\Events\Solr.Events.Web.Index.config" />
+    <Content Include="App_Config\Include\TAC\Pipelines\Request\execute.request.config" />
     <None Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -299,6 +305,7 @@
     <Content Include="Views\Navigation\Index.cshtml" />
     <Content Include="Views\RelatedEvents\Index.cshtml" />
     <Content Include="Views\EventsList\Index.cshtml" />
+    <Content Include="Views\TAC\Events\PlainContent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
