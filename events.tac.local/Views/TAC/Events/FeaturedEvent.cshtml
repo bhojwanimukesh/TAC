@@ -4,17 +4,38 @@
 
 @{ 
     var url = Sitecore.Links.LinkManager.GetItemUrl(Model.Item);
+    var imageOnTop = true;
+    if (Model.Rendering.Parameters.Contains("image-on-top"))
+    {
+        imageOnTop = Model.Rendering.Parameters["image-on-top"] == "true" ? true : false;
+    }
 }
 
 <div class="thumbnail well @Model.Rendering.Parameters["CssClass"]">
-    <a href="@url">
-        @Html.Sitecore().Field("EventImage", new { @class="img-responsive", mw=500, mh=333 })
-    </a>
-    <div class="caption">
-        <h3 class="teaser-heading">@Html.Sitecore().Field("ContentHeading")</h3>
-        <p>
-            @Html.Sitecore().Field("ContentIntro")
-        </p>
-        <a href="@url" class="btn btn-default">Read more</a>
-    </div>
+    @if (imageOnTop)
+    {
+        <a href="@url">
+            @Html.Sitecore().Field("EventImage", new { @class = "img-responsive", mw = 500, mh = 333 })
+        </a>
+        <div class="caption">
+            <h3 class="teaser-heading">@Html.Sitecore().Field("ContentHeading")</h3>
+            <p>
+                @Html.Sitecore().Field("ContentIntro")
+            </p>
+            <a href="@url" class="btn btn-default">Read more</a>
+        </div>
+    }
+    else
+    {
+        <div class="caption">
+            <h3 class="teaser-heading">@Html.Sitecore().Field("ContentHeading")</h3>
+            <p>
+                @Html.Sitecore().Field("ContentIntro")
+            </p>
+            <a href="@url" class="btn btn-default">Read more</a>
+        </div>
+        <a href="@url">
+            @Html.Sitecore().Field("EventImage", new { @class = "img-responsive", mw = 500, mh = 333 })
+        </a>
+    }
 </div>
